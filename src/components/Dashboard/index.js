@@ -32,8 +32,8 @@ const Dashboard = ({ setIsAuthenticated }) => {
       title: 'Are you sure?',
       text: "You won't be able to revert this!",
       showCancelButton: true,
-      confirmButtonText: 'Yes, delete it!',
-      cancelButtonText: 'No, cancel!',
+      confirmButtonText: 'Delete',
+      cancelButtonText: 'cancel',
     }).then(result => {
       if (result.value) {
         const [employee] = employees.filter(employee => employee.id === id);
